@@ -12,19 +12,6 @@ public class Contact {
         this.phoneNumber = builder.phoneNumber;
     }
 
-    //Getters & Setters <<----------------------------------------------------------------------------------------------
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
     @Override
     public String toString() {
         return firstName+" "+lastName + " - "+phoneNumber;
@@ -54,18 +41,6 @@ public class Contact {
 
         public Contact build() {
             return new Contact(this);
-        }
-
-        public void setFirstName(String firstName) {
-            this.firstName = firstName;
-        }
-
-        public void setLastName(String lastName) {
-            this.lastName = lastName;
-        }
-
-        public void setPhoneNumber(String phoneNumber) {
-            this.phoneNumber = phoneNumber;
         }
     }
 
