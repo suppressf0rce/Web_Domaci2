@@ -106,7 +106,7 @@ public class Client {
                         break;
                 }
             }
-
+            socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

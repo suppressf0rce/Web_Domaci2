@@ -69,6 +69,7 @@ public class ServerThread implements Runnable {
                 }
 
             }
+            socket.close();
 
         } catch (IOException e) {
             e.printStackTrace();
